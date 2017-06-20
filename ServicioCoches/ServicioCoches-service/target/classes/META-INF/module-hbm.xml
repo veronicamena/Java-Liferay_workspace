@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="serviciocoches.model.Coche" />
+	<class name="serviciocoches.model.impl.CocheImpl" table="FOO_Coche">
+		<id name="Matricula" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="Marca" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Modelo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Precio" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="PrecioConIva" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+	</class>
+</hibernate-mapping>

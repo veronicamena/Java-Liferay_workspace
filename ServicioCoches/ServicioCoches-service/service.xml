@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="serviciocoches">
+	<namespace>FOO</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+    <entity name="Coche" local-service="true">
+        <column name="Matricula" type="String" primary="true"></column>
+        <column name="Marca" type="String"></column>
+        <column name="Modelo" type="String"></column>
+        <column name="Precio" type="double"></column>
+        <column name="PrecioConIva" type="double"></column>
+    </entity>
+</service-builder>

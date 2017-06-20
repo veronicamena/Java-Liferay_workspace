@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="serviciocoches.model.Coche">
+		<field name="Matricula" type="String" />
+		<field name="Marca" type="String" />
+		<field name="Modelo" type="String" />
+		<field name="Precio" type="double" />
+		<field name="PrecioConIva" type="double" />
+	</model>
+</model-hints>
